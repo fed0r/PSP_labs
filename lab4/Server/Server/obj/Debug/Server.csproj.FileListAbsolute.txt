@@ -1,0 +1,35 @@
+E:\Study\Network apps programming\lab5\Server\Server\bin\Debug\Server.exe.config
+E:\Study\Network apps programming\lab5\Server\Server\bin\Debug\Server.exe
+E:\Study\Network apps programming\lab5\Server\Server\bin\Debug\Server.pdb
+E:\Study\Network apps programming\lab5\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+E:\Study\Network apps programming\lab5\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\Study\Network apps programming\lab5\Server\Server\obj\Debug\Server.exe
+E:\Study\Network apps programming\lab5\Server\Server\obj\Debug\Server.pdb
+E:\универ\ПрСетПр\laba4\Server\Server\bin\Debug\Server.exe.config
+E:\универ\ПрСетПр\laba4\Server\Server\bin\Debug\Server.exe
+E:\универ\ПрСетПр\laba4\Server\Server\bin\Debug\Server.pdb
+E:\универ\ПрСетПр\laba4\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+E:\универ\ПрСетПр\laba4\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\универ\ПрСетПр\laba4\Server\Server\obj\Debug\Server.exe
+E:\универ\ПрСетПр\laba4\Server\Server\obj\Debug\Server.pdb
+e:\Study\Network apps programming\angel\lab5\laba4\Server\Server\bin\Debug\Server.exe.config
+e:\Study\Network apps programming\angel\lab5\laba4\Server\Server\bin\Debug\Server.exe
+e:\Study\Network apps programming\angel\lab5\laba4\Server\Server\bin\Debug\Server.pdb
+e:\Study\Network apps programming\angel\lab5\laba4\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+e:\Study\Network apps programming\angel\lab5\laba4\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+e:\Study\Network apps programming\angel\lab5\laba4\Server\Server\obj\Debug\Server.exe
+e:\Study\Network apps programming\angel\lab5\laba4\Server\Server\obj\Debug\Server.pdb
+C:\Users\nasty\OneDrive\Desktop\laba4_2\Server\Server\bin\Debug\Server.exe.config
+C:\Users\nasty\OneDrive\Desktop\laba4_2\Server\Server\bin\Debug\Server.exe
+C:\Users\nasty\OneDrive\Desktop\laba4_2\Server\Server\bin\Debug\Server.pdb
+C:\Users\nasty\OneDrive\Desktop\laba4_2\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\nasty\OneDrive\Desktop\laba4_2\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\nasty\OneDrive\Desktop\laba4_2\Server\Server\obj\Debug\Server.exe
+C:\Users\nasty\OneDrive\Desktop\laba4_2\Server\Server\obj\Debug\Server.pdb
+f:\лабы псп\laba4\Server\Server\bin\Debug\Server.exe.config
+f:\лабы псп\laba4\Server\Server\bin\Debug\Server.exe
+f:\лабы псп\laba4\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+f:\лабы псп\laba4\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+f:\лабы псп\laba4\Server\Server\obj\Debug\Server.exe
+f:\лабы псп\laba4\Server\Server\obj\Debug\Server.pdb
+f:\лабы псп\laba4\Server\Server\bin\Debug\Server.pdb

@@ -1,0 +1,21 @@
+E:\Study\Network apps programming\lab5\Client\Client\bin\Debug\Client.exe.config
+E:\Study\Network apps programming\lab5\Client\Client\bin\Debug\Client.exe
+E:\Study\Network apps programming\lab5\Client\Client\bin\Debug\Client.pdb
+E:\Study\Network apps programming\lab5\Client\Client\obj\Debug\Client.csprojAssemblyReference.cache
+E:\Study\Network apps programming\lab5\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\Study\Network apps programming\lab5\Client\Client\obj\Debug\Client.exe
+E:\Study\Network apps programming\lab5\Client\Client\obj\Debug\Client.pdb
+E:\универ\ПрСетПр\laba4\Client\Client\bin\Debug\Client.exe.config
+E:\универ\ПрСетПр\laba4\Client\Client\bin\Debug\Client.exe
+E:\универ\ПрСетПр\laba4\Client\Client\bin\Debug\Client.pdb
+E:\универ\ПрСетПр\laba4\Client\Client\obj\Debug\Client.csprojAssemblyReference.cache
+E:\универ\ПрСетПр\laba4\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\универ\ПрСетПр\laba4\Client\Client\obj\Debug\Client.exe
+E:\универ\ПрСетПр\laba4\Client\Client\obj\Debug\Client.pdb
+e:\Study\Network apps programming\angel\lab5\laba4\Client\Client\bin\Debug\Client.exe.config
+e:\Study\Network apps programming\angel\lab5\laba4\Client\Client\bin\Debug\Client.exe
+e:\Study\Network apps programming\angel\lab5\laba4\Client\Client\bin\Debug\Client.pdb
+e:\Study\Network apps programming\angel\lab5\laba4\Client\Client\obj\Debug\Client.csprojAssemblyReference.cache
+e:\Study\Network apps programming\angel\lab5\laba4\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+e:\Study\Network apps programming\angel\lab5\laba4\Client\Client\obj\Debug\Client.exe
+e:\Study\Network apps programming\angel\lab5\laba4\Client\Client\obj\Debug\Client.pdb

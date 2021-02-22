@@ -1,0 +1,9 @@
+﻿  ServerTcp.cpp
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ServerTcp\ServerTcp\ServerTcp.cpp(23,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ServerTcp\ServerTcp\ServerTcp.cpp(33,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ServerTcp\ServerTcp\ServerTcp.cpp(48,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ServerTcp\ServerTcp\ServerTcp.cpp(97,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ServerTcp\ServerTcp\ServerTcp.cpp(97,50): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ServerTcp\ServerTcp\ServerTcp.cpp(107,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ServerTcp\ServerTcp\ServerTcp.cpp(111,23): warning C4018: <: несоответствие типов со знаком и без знака
+  ServerTcp.vcxproj -> C:\Users\nasty\OneDrive\Desktop\4\lab4\ServerTcp\Debug\ServerTcp.exe

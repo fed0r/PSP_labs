@@ -1,0 +1,136 @@
+document.addEventListener('DOMContentLoaded', () => {
+    get_all();
+  });
+
+function get_all(){
+    // Инициализировать новый запрос
+          var request = new XMLHttpRequest();
+          request.open('GET', '/get_all');
+
+          // Функция обратного вызова, когда запрос завершен
+          request.onload = () => {
+              // Извлечение данных JSON из запроса
+              const data = JSON.parse(request.responseText);
+              fillTable(data);
+          }
+
+          // Послать запрос
+          request.send(null);
+}
+
+function fillTable(data){
+    var table = document.getElementById("table");
+    var text = "<tr><td>Id</td><td>Name</td><td>Boss</td><td>Workers Count</td><td>Company</td><td>Update</td><td>Delete</td></tr>";
+    for(let i = 0; i < data.length; i++){
+        let id = data[i].manufactory.id;
+        let name = data[i].manufactory.name;
+        let boss = data[i].manufactory.boss;
+        let workers_count = data[i].manufactory.workers_count;
+        let company_name = data[i].manufactory.company_name;
+        text += "<tr>" +
+                    `<td>${id}</td>` +
+                    "<td>" +
+                        `<input type=\"text\" class=\"\input_text\" id=\"name${id}_input\" value=\"${name}\">` +
+                    "</td>" +
+                    "<td>" +
+                        `<input type=\"text\" class=\"\input_text\" id=\"boss${id}_input\" value=\"${boss}\">` +
+                    "</td>" +
+                    "<td>" +
+                        `<input type=\"text\" class=\"\input_text\" id=\"workers_count${id}_input\" value=\"${workers_count}\">` +
+                    "</td>" +
+                    "<td>" +
+                        `<input type=\"text\" class=\"\input_text\" id=\"company_name${id}_input\" value=\"${company_name}\">` +
+                    "</td>" +
+                    "<td>" +
+                        `<a class="green" onclick=\"update_manufactory(${id})\">Update</a>` +
+                    "</td><td>" + 
+                        `<a class="green" onclick=\"remove_manufactory(${id})\">Remove</a>` +
+                    "</td></tr>";
+    }
+    text += "<tr><td></td><td><input type=\"text\" class=\"\input_text\" id=\"name_input\">" +
+            "</td><td><input type=\"text\" class=\"\input_text\" id=\"boss_input\">" +
+            "</td><td><input type=\"text\" class=\"\input_text\" id=\"workers_count_input\">" +
+            "</td><td><input type=\"text\" class=\"\input_text\" id=\"company_name_input\">" +
+            "</td><td><a class=\"green\" onclick=\"create_manufactory()\">Add</a>" +
+            "</td><td></td></tr>"
+
+    table.innerHTML = text;
+}
+
+function remove_manufactory(id){
+    var request = new XMLHttpRequest();
+    request.open("DELETE", '/delete?id=' + id);
+
+    // Функция обратного вызова, когда запрос завершен
+      request.onload = () => {
+          response = JSON.parse(request.responseText);
+          if(request.status == '200'){
+            get_all();
+            WriteMessage(response.success, true);
+          }
+          else{
+            WriteMessage(response.error, false);
+          }
+      }
+
+    request.send();
+}
+
+function create_manufactory(){
+    var request = new XMLHttpRequest();
+    var name = document.getElementById("name_input").value;
+    var boss = document.getElementById("boss_input").value;
+    var workers_count = document.getElementById("workers_count_input").value;
+    var company_name = document.getElementById("company_name_input").value;
+    request.open("POST", `/create?name=${name}&boss=${boss}&workers_count=${workers_count}&company_name=${company_name}`);
+
+    // Функция обратного вызова, когда запрос завершен
+      request.onload = () => {
+          response = JSON.parse(request.responseText);
+          if(request.status == '200'){
+            get_all();
+            WriteMessage(response.success, true);
+          }
+          else{
+            WriteMessage(response.error, false);
+          }
+      }
+
+    request.send();
+}
+
+function update_manufactory(id){
+    var request = new XMLHttpRequest();
+    var name = document.getElementById(`name${id}_input`).value;
+    var boss = document.getElementById(`boss${id}_input`).value;
+    var workers_count = document.getElementById(`workers_count${id}_input`).value;
+    var company_name = document.getElementById(`company_name${id}_input`).value;
+    request.open("PUT", `/update?id=${id}&name=${name}&boss=${boss}&workers_count=${workers_count}&company_name=${company_name}`);
+
+    // Функция обратного вызова, когда запрос завершен
+      request.onload = () => {
+          response = JSON.parse(request.responseText);
+          if(request.status == '200'){
+            get_all();
+            WriteMessage(response.success, true);
+          }
+          else{
+            WriteMessage(response.error, false);
+          }
+      }
+
+    request.send();
+}
+
+function WriteMessage(message, success){
+    var now = new Date();
+    status_text = document.getElementById("answertext");
+    status_text.style.color = success ? "green" : "red";
+    Year = now.getFullYear();
+    Month = now.getMonth();
+    Day = now.getDate();
+    Hour = now.getHours();
+    Minutes = now.getMinutes();
+    Seconds = now.getSeconds();
+    status_text.innerHTML = `${Year}.${Month}.${Day} ${Hour}:${Minutes}:${Seconds} - ${message}`;
+}

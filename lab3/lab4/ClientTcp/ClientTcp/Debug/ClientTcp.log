@@ -1,0 +1,5 @@
+﻿  ClientTcp.cpp
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ClientTcp\ClientTcp\ClientTcp.cpp(19,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ClientTcp\ClientTcp\ClientTcp.cpp(29,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\nasty\OneDrive\Desktop\4\lab4\ClientTcp\ClientTcp\ClientTcp.cpp(44,23): warning C4018: <: несоответствие типов со знаком и без знака
+  ClientTcp.vcxproj -> C:\Users\nasty\OneDrive\Desktop\4\lab4\ClientTcp\Debug\ClientTcp.exe

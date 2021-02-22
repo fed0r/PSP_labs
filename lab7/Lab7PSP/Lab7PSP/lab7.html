@@ -1,0 +1,71 @@
+﻿<html>
+<head>
+    <title>Lab7PSP</title>
+</head>
+<body>
+    <h1>Введите массив:</h1>
+    <input type="text" id="arraytext"></input>
+
+    <input type="button" value="Send" onclick="SendData()"></input>
+    <p id="result"><p>
+    <p type="text" id="sorted"><p>
+        <script language="javascript" type="text/javascript">
+
+            var wsUri = "ws://192.168.43.161:8080/";
+            var output;
+
+            function init() {
+                output = document.getElementById("result");
+                testWebSocket();
+            }
+
+            function testWebSocket() {
+                websocket = new WebSocket(wsUri);
+                websocket.onopen = function (evt) { onOpen(evt) };
+                websocket.onclose = function (evt) { onClose(evt) };
+                websocket.onmessage = function (evt) { onMessage(evt) };
+                websocket.onerror = function (evt) { onError(evt) };
+            }
+
+            function onOpen(evt) {
+                //output.innerHTML = evt.data;
+                writeToScreen("You connected!");
+            }
+
+            function onClose(evt) {
+                writeToScreen("You disconnected!");
+            }
+
+            function onMessage(evt) {
+                output.innerHTML = evt.data;
+            }
+
+            function onError(evt) {
+                writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+            }
+
+            function doSend(message) {
+                writeToScreen("sent: " + message);
+                websocket.send(message);
+            }
+
+            function writeToScreen(message) {
+                var pre = document.createElement("p");
+                pre.style.wordWrap = "break-word";
+                pre.innerHTML = message;
+                output.appendChild(pre);
+            }
+
+            function SendData() {
+                let mas = document.getElementById('arraytext').value;
+               
+                var params = mas;
+                console.log(params);
+                doSend(params);
+            }
+
+            window.addEventListener("load", init, false);
+
+        </script>
+</body>
+</html>
